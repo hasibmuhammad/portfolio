@@ -26,7 +26,7 @@ export default function Projects() {
         {PROJECTS_DATA.map((project, index) => (
           <div 
             key={index} 
-            className="group relative bg-accents-1/50 rounded-lg p-8 hover:-translate-y-2 transition-all duration-300 ease-in-out hover:shadow-2xl border border-transparent hover:border-accents-2"
+            className="group relative bg-accents-1/50 rounded-lg p-8 hover:-translate-y-2 transition-all duration-300 ease-in-out hover:shadow-2xl border border-accents-2"
           >
             <div className="flex justify-between items-center mb-8">
               <div className="text-accents-6 group-hover:text-foreground transition-colors">
@@ -66,7 +66,7 @@ export default function Projects() {
             
             <ul className="flex flex-wrap gap-x-4 gap-y-2 mt-auto">
               {project.tags.map((tag) => (
-                <li key={tag} className="text-xs font-mono text-accents-4">
+                <li key={tag} className="text-xs font-mono text-accents-4 border border-accents-2 rounded-full px-2 py-1">
                   {tag}
                 </li>
               ))}

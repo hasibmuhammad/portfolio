@@ -10,7 +10,7 @@ export const NAV_LINKS = [
 export const HERO_DATA = {
   name: "Md Hasib Talukder",
   greeting: "Hi there!",
-  description: "With over 1.5+ years of industry experience, I build high-quality web experiences with modern technologies. Passionate about Next.js, React, and clean design.",
+  description: "With over 2+ years of industry experience, I build high-quality web experiences with modern technologies. Passionate about Next.js, React, and clean design.",
   resumeUrl: "https://drive.google.com/file/d/1wknaT1-fQcq0HQdhiCiE0M10RivTDFXQ/view",
   actions: {
     primary: { label: "View Projects", href: "#projects" },

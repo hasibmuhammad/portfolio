@@ -134,7 +134,7 @@ export default function Hero() {
                   transition={{ delay: 0.5, duration: 0.5 }}
                   className="absolute -right-4 -bottom-4 md:-right-8 md:-bottom-8 bg-background/80 backdrop-blur-md border border-accents-2 p-4 md:p-6 rounded-2xl shadow-2xl z-20 group-hover:scale-110 transition-transform duration-500"
                 >
-                  <div className="text-2xl md:text-3xl font-bold text-foreground">1.5+</div>
+                  <div className="text-2xl md:text-3xl font-bold text-foreground">2+</div>
                   <div className="text-[10px] md:text-xs uppercase tracking-wider text-accents-5 font-semibold leading-tight">
                     Years of<br />Experience
                   </div>

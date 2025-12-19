@@ -28,7 +28,7 @@ export default function Contact() {
             <Button 
               size="lg" 
               className="cursor-pointer h-14 px-8 text-lg rounded-full gap-3 shadow-xl"
-              onClick={() => window.open("https://wa.me/01627156515", "_blank", "noopener,noreferrer")}
+              onClick={() => window.open("https://wa.me/+8801627156515", "_blank", "noopener,noreferrer")}
             >
               Let's Discuss <MessageCircle size={20} />
             </Button>

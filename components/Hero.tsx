@@ -115,10 +115,10 @@ export default function Hero() {
                 className="w-full h-full relative group"
               >
                 {/* Decorative Background Frame */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-accents-2 to-background border border-accents-2 rounded-[2rem] transform rotate-10 scale-[0.95] opacity-80 transition-all duration-500 group-hover:rotate-12 group-hover:scale-100 group-hover:opacity-100"></div>
+                <div className="absolute inset-0 bg-linear-to-tr from-accents-2 to-background border border-accents-2 rounded-[2rem] transform rotate-10 scale-[0.95] opacity-80 transition-all duration-500 group-hover:rotate-12 group-hover:scale-100 group-hover:opacity-100"></div>
                 
                 {/* Main Image Container */}
-                <div className="absolute inset-0 rounded-[2rem] overflow-hidden border border-accents-2/50 shadow-2xl transition-transform duration-500 group-hover:-rotate-3 group-hover:-translate-y-2">
+                <div className="absolute inset-0 rounded-4xl overflow-hidden border border-accents-2/50 shadow-2xl transition-transform duration-500 group-hover:-rotate-3 group-hover:-translate-y-2">
                   <div className="absolute inset-0 bg-accents-1/10 z-10 transition-opacity duration-300 group-hover:opacity-0"></div>
                   <img 
                     src="/images/hasib_muhammad.png" 

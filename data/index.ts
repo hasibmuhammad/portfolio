@@ -108,7 +108,7 @@ export const PROJECTS_DATA = [
     title: "TMDB Movies App",
     description: "TMDB Movies App is a movie app where you can search movies, make favorute that persist in local storage, and show casts.",
     tags: ["Next.js", "TypeScript", "Tanstack Query", "REST API", "Tailwind CSS", "TMDB API", "Zod", "React Hook Form", "ISR, SSR, CSR"],
-    link: "https://tmdb-movies-app.vercel.app",
+    link: "https://tmdb-movies-web.vercel.app",
     github: "https://github.com/hasibmuhammad/tmdb-movies-app"
   },
   {

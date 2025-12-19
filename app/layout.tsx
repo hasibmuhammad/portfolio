@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Md Hasib Talukder - Portfolio",
   description: "Personal portfolio of Md Hasib Talukder, showcasing projects and skills.",
   icons: {
-    icon: "/favicon.ico",
+    icon: `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🧑‍💻</text></svg>`,
   },
 };
 

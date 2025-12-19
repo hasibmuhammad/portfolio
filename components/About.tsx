@@ -30,7 +30,7 @@ export default function About() {
         {/* Right Column: Tech Stack Grid */}
         <div className="grid gap-6">
           {ABOUT_DATA.skills.map((skillGroup) => (
-            <div key={skillGroup.category} className="bg-accents-1/30 backdrop-blur-sm p-6 rounded-xl border border-accents-2 transition-all duration-300 hover:border-success/50 hover:shadow-xl hover:-translate-y-1 group">
+            <div key={skillGroup.category} className="bg-accents-1/30 backdrop-blur-sm p-6 rounded-xl border border-accents-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 bg-background/50 rounded-lg text-foreground group-hover:scale-110 transition-transform duration-300">
                   {skillGroup.icon === "Globe" ? <Globe size={20} strokeWidth={2} /> : <Terminal size={20} strokeWidth={2} />}

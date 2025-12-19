@@ -30,7 +30,7 @@ export default function Contact() {
               className="cursor-pointer h-14 px-8 text-lg rounded-full gap-3 shadow-xl"
               onClick={() => window.open("https://wa.me/01627156515", "_blank", "noopener,noreferrer")}
             >
-              Chat on WhatsApp <MessageCircle size={20} />
+              Let's Discuss <MessageCircle size={20} />
             </Button>
             
             <div className="flex items-center gap-6 mt-4">

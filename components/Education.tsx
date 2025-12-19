@@ -37,9 +37,9 @@ export default function Education() {
                 </div>
               </div>
               
-              <div className="text-lg font-medium text-foreground mb-4 flex items-center gap-2">
-                <GraduationCap size={16} />
-                {edu.institution}
+              <div className="text-lg font-medium text-foreground mb-4 flex items-start gap-2">
+                <GraduationCap className="shrink-0 mt-1" size={20} />
+                <p>{edu.institution}</p>
               </div>
               
               <div className="text-accents-5 mb-4 leading-relaxed whitespace-pre-line">

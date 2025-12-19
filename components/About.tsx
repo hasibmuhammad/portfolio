@@ -18,6 +18,7 @@ export default function About() {
             <div className="pt-4">
               <a 
                 href={ABOUT_DATA.resumeUrl} 
+                target="_blank"
                 className="inline-flex items-center gap-2 text-foreground font-medium group"
               >
                 Download Resume <span className="group-hover:translate-x-1 transition-transform">→</span>

@@ -1,6 +1,6 @@
+import { PROJECTS_DATA } from "@/data";
 import { ExternalLink, Folder, Github } from "lucide-react";
 import Section from "./ui/Section";
-import { PROJECTS_DATA } from "@/data";
 
 interface Project {
   title: string;
@@ -28,7 +28,7 @@ export default function Projects() {
             key={index} 
             className="group relative bg-accents-1/50 rounded-lg p-8 hover:-translate-y-2 transition-all duration-300 ease-in-out hover:shadow-2xl border border-transparent hover:border-accents-2"
           >
-            <div className="flex justify-between items-start mb-8">
+            <div className="flex justify-between items-center mb-8">
               <div className="text-accents-6 group-hover:text-foreground transition-colors">
                 <Folder size={40} strokeWidth={1.5} />
               </div>
@@ -36,6 +36,7 @@ export default function Projects() {
                 {project.github && (
                   <a 
                     href={project.github} 
+                    target="_blank"
                     className="text-accents-5 hover:text-foreground transition-colors"
                     aria-label="View Source Code"
                   >
@@ -45,6 +46,7 @@ export default function Projects() {
                 {project.link && (
                   <a 
                     href={project.link} 
+                    target="_blank"
                     className="text-accents-5 hover:text-success transition-colors"
                     aria-label="Visit Website"
                   >

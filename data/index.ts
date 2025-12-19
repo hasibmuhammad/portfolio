@@ -1,8 +1,9 @@
 
 export const NAV_LINKS = [
   { label: "Experiences", href: "#experience" },
-  { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
+  { label: "Education", href: "#education" },
+  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -51,70 +52,90 @@ export const ABOUT_DATA = {
 
 export const EXPERIENCE_DATA = [
   {
-    title: "Senior Frontend Engineer",
-    company: "Tech Solutions Inc.",
-    period: "2023 - Present",
-    description: "Leading the frontend team in building scalable web applications. improved performance by 40% and implemented a new design system.",
-    skills: ["Next.js", "TypeScript", "GraphQL", "AWS"]
+    title: "Frontend Engineer",
+    company: "Abexita IT",
+    period: "Dec 2024 - Present", 
+    description: [
+      "Building Industry Standard Product Ambel (https://ambel.ca)",
+      "Working with Micro-Frontend Architecture: Module Federation, Mono-repo, NX etc.",
+      "Tech Stack: TypeScript, Redux, RTK-Query, React.js, Next.js, REST Api, Tailwind CSS etc.",
+      "REST API Integration"
+    ],
+    skills: ["Next.js", "React.js", "TypeScript", "Redux Toolkit", "RTK-Query", "NX", "Module Federation"]
   },
   {
-    title: "Software Engineer",
-    company: "Digital Innovations",
-    period: "2021 - 2023",
-    description: "Developed and maintained multiple client-facing websites. Collaborated with designers to implement pixel-perfect user interfaces.",
-    skills: ["React", "Redux", "Node.js", "Material UI"]
+    title: "Frontend Engineer(Internship)",
+    company: "6sense Technologies",
+    period: "Jul 2024 – Oct 2024",
+    description: [
+      "Built Production Grade Application",
+      "Used Technologies like: React.js, Next.js, TypeScript, Tanstack Query, REST API Integration",
+      "Converted the official website of 6sense HQ to Next.js, TypeScript from WordPress",
+      "Contributed to international Enterprise grade applications"
+    ],
+    skills: ["React.js", "Next.js", "TypeScript", "Tanstack Query", "REST API", "Tailwind CSS"]
   },
   {
-    title: "Junior Web Developer",
-    company: "Creative Agency",
-    period: "2020 - 2021",
-    description: "Assisted in the development of e-commerce platforms. Wrote clean, maintainable code and participated in code reviews.",
-    skills: ["JavaScript", "HTML/CSS", "Bootstrap", "PHP"]
+    title: "Jr. Software Engineer",
+    company: "Codexpert, Inc.",
+    period: "Sep 2019 – Feb 2020",
+    description: [
+      "Mostly I worked as a WordPress Plugin developer here",
+      "Created WordPress Websites, Customized Plugins, etc.",
+      "Created Responsive Website using HTML, CSS, JavaScript, etc."
+    ],
+    skills: ["WordPress", "PHP", "JavaScript", "HTML5", "CSS3", "Bootstrap"]
   }
 ];
 
 export const PROJECTS_DATA = [
   {
-    title: "Project One",
-    description: "A comprehensive dashboard for data visualization using React and D3.js. Features real-time updates and interactive charts.",
-    tags: ["Next.js", "TypeScript", "D3.js"],
-    link: "#",
+    title: "6senseHQ - Official Website",
+    description: "Built the official website of 6sense Technologies using Next.js, TypeScript, Tanstack Query, REST API Integration",
+    tags: ["Next.js", "TypeScript", "Tanstack Query", "REST API", "Tailwind CSS"],
+    link: "https://6sensehq.vercel.app/",
     github: "#",
     featured: true
   },
   {
-    title: "Project Two",
-    description: "E-commerce platform with full shopping cart functionality, payment integration, and user authentication.",
-    tags: ["React", "Node.js", "Stripe"],
-    link: "#",
-    github: "#"
+    title: "Assignment Portal",
+    description: "Assignment Portal is a portal where assignment can be submitted and graded.",
+    tags: ["React", "Express.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "React Query", "REST API", "Firebase", "JWT", "MongoDB"],
+    link: "https://assignment-portal-d23d4.web.app",
+    github: "https://github.com/hasibmuhammad/portal-client"
   },
   {
-    title: "Project Three",
-    description: "Task management application designed for team collaboration, featuring drag-and-drop kanban boards.",
-    tags: ["Vue.js", "Firebase", "Tailwind"],
-    link: "#",
-    github: "#"
+    title: "TMDB Movies App",
+    description: "TMDB Movies App is a movie app where you can search movies, make favorute that persist in local storage, and show casts.",
+    tags: ["Next.js", "TypeScript", "Tanstack Query", "REST API", "Tailwind CSS", "TMDB API", "Zod", "React Hook Form", "ISR, SSR, CSR"],
+    link: "https://tmdb-movies-app.vercel.app",
+    github: "https://github.com/hasibmuhammad/tmdb-movies-app"
   },
   {
-    title: "Project Four",
-    description: "Real-time chat application with websocket integration and message encryption.",
-    tags: ["Socket.io", "React", "Express"],
-    link: "#",
-    github: "#"
+    title: "Foodie",
+    description: "A simple e-commerce app where you can showcase your products and make orders.",
+    tags: ["React", "Tanstack Query", "REST API", "Tailwind CSS","React Hook Form","Firebase", "JWT", "MongoDB"],
+    link: "https://foodie-be4f4.web.app/",
+    github: "https://github.com/hasibmuhammad/foodie-frontend"
   },
   {
-    title: "Project Five",
-    description: "AI-powered content generator using OpenAI API and custom prompt engineering.",
-    tags: ["Python", "FastAPI", "OpenAI"],
-    link: "#",
-    github: "#"
+    title: "Knowledge Caffe",
+    description: "A landing page with blogs having facility to bookmark and add total read minutes.",
+    tags: ["React.js", "Tailwind CSS"],
+    link: "https://knowledge-cafe-hasib.surge.sh/",
+    github: "https://github.com/hasibmuhammad/knowledge-caffe"
   },
+];
+
+export const EDUCATION_DATA = [
   {
-    title: "Project Six",
-    description: "Mobile-first workout tracker progressive web app (PWA) with offline capabilities.",
-    tags: ["PWA", "React", "IndexedDB"],
-    link: "#",
-    github: "#"
-  },
+    institution: "Bangladesh University of Business and Technology (BUBT)",
+    degree: "Bachelor of Science in Computer Science",
+    period: "Oct 2019 – Oct 2023",
+    description: [
+      "CGPA - 3.98",
+      "Completed Thesis on Deep Learning( Created 'DualNet' Model using Ensemble Learning ) to achieve higher accuracy during Tomato Leaf Disease Classification"
+    ],
+    icon: "GraduationCap"
+  }
 ];

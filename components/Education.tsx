@@ -1,32 +1,23 @@
 "use client";
 
-import { EXPERIENCE_DATA } from "@/data";
+import { EDUCATION_DATA } from "@/data";
 import { motion } from "framer-motion";
-import { Briefcase, Calendar } from "lucide-react";
+import { Calendar, GraduationCap } from "lucide-react";
 import Section from "./ui/Section";
 
-interface Job {
-  title: string;
-  company: string;
-  period: string;
-  description: string | string[];
-  skills: string[];
-}
-
-
-export default function Experience() {
+export default function Education() {
   return (
-    <Section id="experience">
+    <Section id="education">
       <div className="grid md:grid-cols-[1fr_2fr] gap-16 items-start">
         <div className="md:sticky md:top-24 space-y-4">
-          <h2 className="text-4xl font-bold tracking-tight">Work Experience</h2>
+          <h2 className="text-4xl font-bold tracking-tight">Education</h2>
           <p className="text-accents-5 text-lg">
-            My professional journey and the companies I&apos;ve had the privilege to work with.
+            My academic background and qualifications.
           </p>
         </div>
 
         <div className="relative border-l border-accents-2 space-y-8">
-          {EXPERIENCE_DATA.map((job, index) => (
+          {EDUCATION_DATA.map((edu, index) => (
             <motion.div 
               key={index}
               initial={{ opacity: 0, x: -20 }}
@@ -39,36 +30,28 @@ export default function Experience() {
               <span className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-foreground ring-4 ring-background" />
               
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                <h3 className="text-xl font-bold text-foreground">{job.title}</h3>
+                <h3 className="text-xl font-bold text-foreground">{edu.degree}</h3>
                 <div className="flex items-center gap-2 text-sm text-accents-5 mt-1 sm:mt-0">
                   <Calendar size={14} />
-                  <span>{job.period}</span>
+                  <span>{edu.period}</span>
                 </div>
               </div>
               
               <div className="text-lg font-medium text-foreground mb-4 flex items-center gap-2">
-                <Briefcase size={16} />
-                {job.company}
+                <GraduationCap size={16} />
+                {edu.institution}
               </div>
               
               <div className="text-accents-5 mb-4 leading-relaxed whitespace-pre-line">
-                {Array.isArray(job.description) ? (
+                {Array.isArray(edu.description) ? (
                   <ul className="list-disc list-inside space-y-1">
-                    {job.description.map((point, i) => (
+                    {edu.description.map((point, i) => (
                       <li key={i}>{point}</li>
                     ))}
                   </ul>
                 ) : (
-                  <p>{job.description}</p>
+                  <p>{edu.description}</p>
                 )}
-              </div>
-              
-              <div className="flex flex-wrap gap-2">
-                {job.skills.map((skill) => (
-                  <span key={skill} className="text-xs font-medium px-2.5 py-1 rounded-full bg-accents-1 text-accents-6 border border-accents-2">
-                    {skill}
-                  </span>
-                ))}
               </div>
             </motion.div>
           ))}
